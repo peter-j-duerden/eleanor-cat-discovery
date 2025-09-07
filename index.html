@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleanor's Cat Discovery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🐱 Eleanor's Cat Discovery 🐱</h1>
+            <p class="subtitle">Click the boxes to find adorable cats!</p>
+        </header>
+        
+        <div class="game-stats">
+            <div class="score">Cats Found: <span id="score">0</span>/8</div>
+            <button class="reset-btn" onclick="resetGame()">New Cats</button>
+        </div>
+
+        <div class="grid-container">
+            <div class="cat-box" onclick="revealCat(this, 0)">
+                <div class="box-front">
+                    <span class="mystery">?</span>
+                </div>
+                <div class="box-back">
+                    <img src="" alt="Cat">
+                    <p class="cat-name"></p>
+                </div>
+            </div>
+            
+            <div class="cat-box" onclick="revealCat(this, 1)">
+                <div class="box-front">
+                    <span class="mystery">?</span>
+                </div>
+                <div class="box-back">
+                    <img src="" alt="Cat">
+                    <p class="cat-name"></p>
+                </div>
+            </div>
+            
+            <div class="cat-box" onclick="revealCat(this, 2)">
+                <div class="box-front">
+                    <span class="mystery">?</span>
+                </div>
+                <div class="box-back">
+                    <img src="" alt="Cat">
+                    <p class="cat-name"></p>
+                </div>
+            </div>
+            
+            <div class="cat-box" onclick="revealCat(this, 3)">
+                <div class="box-front">
+                    <span class="mystery">?</span>
+                </div>
+                <div class="box-back">
+                    <img src="" alt="Cat">
+                    <p class="cat-name"></p>
+                </div>
+            </div>
+            
+            <div class="cat-box" onclick="revealCat(this, 4)">
+                <div class="box-front">
+                    <span class="mystery">?</span>
+                </div>
+                <div class="box-back">
+                    <img src="" alt="Cat">
+                    <p class="cat-name"></p>
+                </div>
+            </div>
+            
+            <div class="cat-box" onclick="revealCat(this, 5)">
+                <div class="box-front">
+                    <span class="mystery">?</span>
+                </div>
+                <div class="box-back">
+                    <img src="" alt="Cat">
+                    <p class="cat-name"></p>
+                </div>
+            </div>
+            
+            <div class="cat-box" onclick="revealCat(this, 6)">
+                <div class="box-front">
+                    <span class="mystery">?</span>
+                </div>
+                <div class="box-back">
+                    <img src="" alt="Cat">
+                    <p class="cat-name"></p>
+                </div>
+            </div>
+            
+            <div class="cat-box" onclick="revealCat(this, 7)">
+                <div class="box-front">
+                    <span class="mystery">?</span>
+                </div>
+                <div class="box-back">
+                    <img src="" alt="Cat">
+                    <p class="cat-name"></p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="fun-facts">
+            <h2>Fun Cat Fact!</h2>
+            <p id="cat-fact">Click a box to find a kitty cat!</p>
+        </div>
+    </div>
+
+    <div class="celebration" id="celebration">
+        <div class="celebration-content">
+            <h2>🎉 Amazing! 🎉</h2>
+            <p>You found all the cats!</p>
+            <button onclick="resetGame()">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
