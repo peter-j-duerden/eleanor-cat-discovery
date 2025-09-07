@@ -75,13 +75,11 @@ function initializeGame() {
     const boxes = document.querySelectorAll('.cat-box');
     boxes.forEach((box, index) => {
         const img = box.querySelector('.box-back img');
-        const nameElement = box.querySelector('.cat-name');
         
         img.src = currentCats[index].url;
-        nameElement.textContent = currentCats[index].name;
         
         // Add alt text for accessibility
-        img.alt = `A cute ${currentCats[index].name} cat`;
+        img.alt = `A cute cat`;
         
         // Fallback image if loading fails
         img.onerror = function() {
